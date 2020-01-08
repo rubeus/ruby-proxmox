@@ -4,7 +4,6 @@ require 'proxmox/version'
 require 'rest_client'
 require 'json'
 
-require './proxmox/openvz'
 require './proxmox/qemu'
 require './proxmox/lxc'
 
