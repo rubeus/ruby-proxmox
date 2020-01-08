@@ -53,25 +53,25 @@ Or install it yourself as:
     "node", "root", "secret", "pam")
     ap server1.templates
     
-    vm1 = server1.openvz_post("ubuntu-10.04-standard_10.04-4_i386", 200)
+    vm1 = server1.lxc_post("ubuntu-10.04-standard_10.04-4_i386", 200)
     wait_status(server1, vm1)
     
-    ap server1.openvz_vm_status(200)
-    vm1 = server1.openvz_vm_start(200)
+    ap server1.lxc_vm_status(200)
+    vm1 = server1.lxc_vm_start(200)
     begin
       wait_status(server1, vm1)
     rescue
     end
     sleep 5
-    ap server1.openvz_vm_shutdown(200)
+    ap server1.lxc_vm_shutdown(200)
     begin
       wait_status(server1, vm1)
     rescue
     end
     sleep 5
-    ap server1.openvz_vm_status(200)
+    ap server1.lxc_vm_status(200)
     
-    vm1 = server1.openvz_delete(200)
+    vm1 = server1.lxc_delete(200)
     wait_status(server1, vm1)
 
 ## Contributing
