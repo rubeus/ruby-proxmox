@@ -11,7 +11,7 @@ require './proxmox/lxc'
 module Proxmox
   # Object to manage Proxmox server
   class Proxmox
-    include Openvz
+    include LXC
     include Qemu
 
 

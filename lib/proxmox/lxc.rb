@@ -2,10 +2,8 @@
 
 
 # This module encapsulates ability to manage Proxmox server
-module Proxmox
+module LXC
   # Object to manage Proxmox server
-  class Proxmox
-
     # Get CT list
     #
     # :call-seq:
@@ -225,5 +223,4 @@ module Proxmox
       http_action_put("nodes/#{@node}/lxc/#{vmid}/config", data)
     end
 
-  end
 end
