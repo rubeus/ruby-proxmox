@@ -6,6 +6,7 @@ require 'json'
 
 require './proxmox/openvz'
 require './proxmox/qemu'
+require './proxmox/lxc'
 
 # This module encapsulates ability to manage Proxmox server
 module Proxmox
