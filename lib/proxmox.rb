@@ -4,8 +4,8 @@ require 'proxmox/version'
 require 'rest_client'
 require 'json'
 
-require './proxmox/qemu'
-require './proxmox/lxc'
+require 'proxmox/qemu'
+require 'proxmox/lxc'
 
 # This module encapsulates ability to manage Proxmox server
 module Proxmox
