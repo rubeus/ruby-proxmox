@@ -22,6 +22,6 @@ end
 group :test do
   gem 'spork'
   gem 'simplecov'
-  gem 'json', '~> 1.8.3'
+  gem 'json'
   gem 'coveralls'
 end
