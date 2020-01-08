@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in ruby-proxmox.gemspec
 gemspec
 
-group :developpement do
+group :development do
   gem 'guard'
   gem 'guard-rspec'
   gem 'guard-bundler'
